@@ -10,6 +10,9 @@ import signature from "../assets/signature.jpg";
 import jardinier from "../assets/jardinier.jpg";
 import potager from "../assets/potager.jpg";
 import ballade from "../assets/ballade.jpg";
+import batiment from "../assets/batiment.jpg";
+import monsieur from "../assets/monsieur.jpg";
+import mediatheque from "../assets/mediatheque.png";
 
 const duoData = [
   [
@@ -141,6 +144,40 @@ const duoData = [
       text: [
         "Le soutien du plan de relance a permis d’aménager les parcelles avec des locaux techniques et une pépinière sous ombrière pour la multiplication des cultures, ainsi que d’acquérir du matériel horticole.",
         "Le soutien du FDI 2021 a pour objectif de passer une partie de la production en hydroponie dès mi-2022. Educanoo a choisi de se faire accompagner par Aquaponie Réunion pour contrôler le système hydroponique et former l’encadrant technique.",
+      ],
+    },
+  ],
+  [
+    {
+      id: 0,
+      src: batiment,
+      alt: "Ouvrier qui construit un mur",
+      text: [
+        "Une première phase de travaux avait permis à 9 réunionnais de venir se former aux métiers du bâtiment tout en réalisant le gros œuvre de la médiathèque. Ils ont pu travailler conjointement et solidairement avec les ouvriers des villages concernés.",
+        "Une seconde phase de travaux avait permis d’entamer les tâches liées au second œuvre.",
+        "Aujourd’hui, nous souhaitons finaliser la construction pour offrir à la région d’Itsandra et au collège de Bangaani sa première médiathèque.",
+      ],
+    },
+    {
+      id: 1,
+      src: mediatheque,
+      alt: "Mediatheque en construction",
+      text: [
+        "Plus tard, nous prévoyons une extension du bâtiment pour en faire un Centre de Formation et d’Apprentissage aux métiers de l’Artisanat. ",
+        "Nous souhaitons via ce bâtiment promouvoir la culture, réduire la fracture numérique et surtout valoriser les métiers manuels.",
+        "Nous comptons sur la solidarité de chacun pour nous permettre de rendre ce bâtiment opérationnel.",
+      ],
+    },
+  ],
+  [
+    {
+      id: 0,
+      src: monsieur,
+      alt: "Vieux monsieur souriant",
+      text: [
+        "C’est ainsi que nous accueillons régulièrement des personnes dans le cadre de notre permanence sociale. Nous faisons également de l’accompagnement éducatif pour les élèves du primaire et du collège.",
+        "Enfin, quand cela nous est possible, nous contribuons à des actions d’aide alimentaire pour les publics les plus fragiles.",
+        "Prochainement, nous envisageons d’offrir au village, son premier cyber social. En effet, 10 ordinateurs sont en cours d’acheminement pour permettre à ceux qui le souhaitent de bénéficier d’une connexion internet et de travailler sur ordinateur.",
       ],
     },
   ],

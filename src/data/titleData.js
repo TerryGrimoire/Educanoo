@@ -44,6 +44,20 @@ const titleData = [
     anchor: "Colibrinoo",
     hashtag: ["#maraîchage", "#pépinière"],
   },
+  {
+    id: 7,
+    title: "Grande Comore",
+    anchor: "Comore",
+    hashtag: ["#mediathèque", "#formation", "#apprentissage", "#comores"],
+    text: "Depuis 2013, en partenariat avec la Commune de Bangaani et le Département de La Réunion, Educanoo a pour projet d’implanter une médiathèque et un centre de formation et d’apprentissage aux Comores.",
+  },
+  {
+    id: 8,
+    title: "Mohéli",
+    anchor: "Moheli",
+    hashtag: ["#proximité", "#accompagnement", "#cybersocial"],
+    text: "Implantée depuis Mai 2020 à Mohéli, notre association a pu contribuer à la mise en place d’actions de proximité dans le village de Fomboni et dans les alentours.",
+  },
 ];
 
 export default titleData;
