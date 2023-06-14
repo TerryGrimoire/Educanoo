@@ -118,6 +118,9 @@ section {
     display: initial;
   }
 
+  .none {
+    display: none;
+  }
 /********************************************************************* HEADER *********************************************************************/ 
 
 
@@ -463,4 +466,268 @@ section {
   height: 5px;
   width: 100%;
   background: linear-gradient(270deg, #9EC41E,#008BD2  );
+}
+
+/********************************************************************* COMPOSANTS *********************************************************************/ 
+/****************** banniere  ***********************/
+.banniere {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banniere h1 {
+  font-size: 5rem;
+  z-index: 2;
+  color: var(--main-bg-color);
+  background-color: transparent;
+}
+
+.banniere h2 {
+  z-index: 2;
+  color: var(--main-bg-color);
+  background-color: transparent;
+}
+
+.banniere a {
+  background-color: transparent;
+  z-index: 5;
+}
+.banniere button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.banniere button img {
+ width: 1.25rem;
+ margin-right: 1rem;
+}
+
+.banniere .veil {
+  position: absolute;
+  background-color: var(--secondary-bg-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 40%;
+}
+
+.kafrine {
+  background-image: url(./assets/kafrine.jpg);
+}
+
+.peintres {
+  background-image: url(./assets/peintres.jpg);
+  background-position: 50%;
+}
+
+.sourires {
+  background-image: url(./assets/sourires.jpg);
+}
+
+.sourireSolidaire {
+  background-image: url(./assets/sourireSolidaire.jpg);
+  background-position: 50%;
+}
+
+.table {
+  background-image: url(./assets/table.jpg);
+  background-position: 50%;
+}
+
+.repas {
+  background-image: url(./assets/repas.jpg);
+}
+
+.contactBanniere {
+  background-image: url(./assets/contact.jpg);
+  background-position: 50% 100%;
+}
+
+.couture {
+  background-image: url(./assets/couture.jpg);
+  background-position: 50%;
+}
+
+/****************** BARRENAV  ***********************/
+
+.barreNav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0;
+  width: 80vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.barreNav a {
+  color: var(--third-color);
+  font-weight: bold;
+}
+
+.barreNav > * {
+  margin-right: 0.5rem;
+}
+
+/****************** SOMMAIRE  ***********************/
+
+.sommaire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 1rem ;
+  background-color: var(--fourth-color);
+  color: var(--main-bg-color);
+}
+
+.sommaire * {
+  background-color: inherit;
+  color: inherit;
+}
+
+.sommaire .sommaire_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sommaire .sommaire_left > * {
+  margin-right: 1rem;
+}
+
+.sommaire .sommaire_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sommaire .sommaire_right > * {
+  margin-left: 1rem;
+}
+
+/****************** DUO  ***********************/
+
+.duo_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.duo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  max-width: var(--max-width);
+
+}
+
+.duo > * {
+  width: 50%;
+}
+
+.duo_img {
+  height: 70vh;
+  width: 45%;
+  object-fit: cover;
+}
+
+.duo_article h3 {
+  color: var(--third-color);
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.duo_article p {
+  width: 80%;
+}
+/****************** PREFOOTER  ***********************/
+
+.prefooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: var(--fourth-color);
+  color: var(--main-bg-color);
+}
+
+.prefooter * {
+  color: inherit;
+  background-color: inherit;
+  margin: 1rem;
+}
+.prefooter h3 {
+  font-size: 2rem;
+}
+/********************************************************************* A PROPOS *********************************************************************/ 
+
+.apropos_intro {
+  width: 80vw;
+  max-width: var(--max-width);
+  margin: 0rem auto;
+}
+
+.apropos_text, .apropos li {
+  margin-bottom: 1.5rem;
+}
+
+.apropos span {
+  font-weight: bold;
+}
+
+.apropos_intro_villes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apropos_intro_villes ul {
+  width: 50%;
+  padding-right: 3rem;
+}
+.apropos_intro_villes img {
+  height: 15rem;
+  width: 50%;
+  object-fit: contain;
+}
+
+.apropos_objectifs {
+  width: 95vw;
+  max-width: 1700px;
+  margin: 0 auto;
+  background-image: url(./assets/background.jpg)
+}
+
+.apropos_objectifs * {
+  background-color: transparent;
+}
+
+.apropos_objectifs_article, .apropos_objectifs h3 {
+  width: 80vw;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+}
+
+.apropos_objectifs_article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.apropos_objectifs_article ul {
+ width: 50%;
+ margin-right: 4rem;
 }

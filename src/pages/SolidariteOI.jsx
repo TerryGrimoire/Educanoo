@@ -3,23 +3,22 @@ import { Helmet } from "react-helmet-async";
 
 import Banniere from "../components/Banniere";
 
-function Contact({ helmet }) {
+function SolidariteOI({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
-    <div className="contact">
+    <div>
       <Helmet>
-        <title> {helmet.title} | Contact </title>
-        <link rel="canonical" href={`${helmet.href}/Services`} />
+        <title> {helmet.title} | Solidarité OI </title>
+        <link rel="canonical" href={`${helmet.href}/SolidariteOI`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main>
-        <Banniere id={4} />
+        <Banniere id={3} />
       </main>
     </div>
   );
 }
 
-export default Contact;
+export default SolidariteOI;

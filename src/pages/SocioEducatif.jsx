@@ -1,25 +1,23 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
-
+import { Helmet } from "react-helmet";
 import Banniere from "../components/Banniere";
 
-function Contact({ helmet }) {
+function SocioEducatif({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
-    <div className="contact">
+    <div>
       <Helmet>
-        <title> {helmet.title} | Contact </title>
-        <link rel="canonical" href={`${helmet.href}/Services`} />
+        <title> {helmet.title} | Socio-éducatif </title>
+        <link rel="canonical" href={`${helmet.href}/SocioEducatif`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main>
-        <Banniere id={4} />
+        <Banniere id={1} />
       </main>
     </div>
   );
 }
 
-export default Contact;
+export default SocioEducatif;

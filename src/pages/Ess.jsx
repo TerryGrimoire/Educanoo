@@ -3,23 +3,22 @@ import { Helmet } from "react-helmet-async";
 
 import Banniere from "../components/Banniere";
 
-function Contact({ helmet }) {
+function Ess({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
-    <div className="contact">
+    <div>
       <Helmet>
-        <title> {helmet.title} | Contact </title>
-        <link rel="canonical" href={`${helmet.href}/Services`} />
+        <title> {helmet.title} | ESS </title>
+        <link rel="canonical" href={`${helmet.href}/Ess`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main>
-        <Banniere id={4} />
+        <Banniere id={2} />
       </main>
     </div>
   );
 }
 
-export default Contact;
+export default Ess;
