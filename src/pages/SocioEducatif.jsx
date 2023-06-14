@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Banniere from "../components/Banniere";
+import Title from "../components/Title";
+import Duo from "../components/Duo";
 
 function SocioEducatif({ helmet }) {
   useEffect(() => {
@@ -15,6 +17,9 @@ function SocioEducatif({ helmet }) {
       </Helmet>
       <main>
         <Banniere id={1} />
+        <Title id={0} />
+        <Duo id={1} />
+        <Title id={1} />
       </main>
     </div>
   );
