@@ -328,3 +328,53 @@ section {
   color: var(--third-color);
   font-weight: bold;
 }
+
+/****************** CHIFFRES  ***********************/
+.chiffres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(107deg, #9EC41E, #008BD2);
+}
+
+.chiffres *  {
+  background-color: transparent;
+  color: var(--main-bg-color);
+}
+
+.chiffres > * {
+  margin: 1rem 0;
+}
+
+.chiffres > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.chiffres > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button_white_blue {
+  background-color: var(--main-bg-color);
+  color: var(--third-color);
+}

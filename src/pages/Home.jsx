@@ -86,6 +86,25 @@ export default function Home({ helmet }) {
           ))}
         </div>
       </section>
+      <section className="chiffres">
+        <h2>Quelques chiffres</h2>
+        <div>
+          <div>
+            <h3>2010</h3> <p>L'année de création d'Educanoo</p>
+          </div>
+          <div>
+            <h3>20000</h3> <p>Personnes accompagnées</p>
+          </div>
+          <div>
+            <h3>120</h3> <p>Permanences par an</p>
+          </div>
+        </div>
+        <Link to="/Apropos">
+          <button type="button" className="button_style button_white_blue">
+            En savoir plus
+          </button>
+        </Link>
+      </section>
     </main>
   );
 }
