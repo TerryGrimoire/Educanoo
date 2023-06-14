@@ -13,6 +13,9 @@ import ballade from "../assets/ballade.jpg";
 import batiment from "../assets/batiment.jpg";
 import monsieur from "../assets/monsieur.jpg";
 import mediatheque from "../assets/mediatheque.png";
+import restoSocial from "../assets/restoSocial.jpg";
+import detenus from "../assets/detenus.jpg";
+import legumes from "../assets/legumes.jpg";
 
 const duoData = [
   [
@@ -178,6 +181,35 @@ const duoData = [
         "C’est ainsi que nous accueillons régulièrement des personnes dans le cadre de notre permanence sociale. Nous faisons également de l’accompagnement éducatif pour les élèves du primaire et du collège.",
         "Enfin, quand cela nous est possible, nous contribuons à des actions d’aide alimentaire pour les publics les plus fragiles.",
         "Prochainement, nous envisageons d’offrir au village, son premier cyber social. En effet, 10 ordinateurs sont en cours d’acheminement pour permettre à ceux qui le souhaitent de bénéficier d’une connexion internet et de travailler sur ordinateur.",
+      ],
+    },
+  ],
+  [
+    {
+      id: 0,
+      src: restoSocial,
+      alt: "groupe de personnes au restaurant",
+      title: "Proposer une restauration sociale",
+      text: [
+        "La vocation sociale de la restauration est double : faire bénéficier les personnels du centre de détention et les fonctionnaires aux alentours d’une restauration de qualité à moindre coût pour déjeuner le midi ; proposer un lieu de convivialité où se retrouver entre collègues.",
+      ],
+    },
+    {
+      id: 1,
+      src: detenus,
+      alt: "Cadre agréable avec un lac artificiel au milieu",
+      title: "Contribuer à l’insertion des personnes détenues",
+      text: [
+        "Les personnes détenues sont formées à un socle de connaissances et de savoir-être en milieu professionnel sur des métiers en tension et d’accompagner leur fin de peine jusqu’à leur sortie en milieu ordinaire. Pour ce faire, elles bénéficieront d’une mise en situation réelle de travail, de formations pour acquérir les connaissances théoriques et pratiques liées aux métiers de la restauration, ainsi que d’un accompagnement socioprofessionnel.",
+      ],
+    },
+    {
+      id: 2,
+      src: legumes,
+      title: "Faire le lien avec l’ACI de production maraîchaire",
+      alt: "Plusieurs fruits et légumes dans un bac en bois",
+      text: [
+        "Depuis l’ouverture du Mess, l’ACI Colibrinoo, fournit régulièrement des salades et différents légumes au Mess. Ces légumes sont transformés par les détenus et servis sur le bar salade.",
       ],
     },
   ],
