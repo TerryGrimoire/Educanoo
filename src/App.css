@@ -667,6 +667,7 @@ section {
 
 .duo_article p {
   width: 100%;
+  margin-bottom: 1rem;
 }
 /****************** PREFOOTER  ***********************/
 
@@ -700,7 +701,7 @@ section {
 
 .title h2 {
   color: var(--third-color);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .title div {
@@ -776,4 +777,33 @@ span {
 .apropos_objectifs_article ul {
  width: 50%;
  margin-right: 4rem;
+}
+
+/********************************************************************* ESS *********************************************************************/ 
+
+.ess_duo {
+  margin-top: -1rem;
+  border-bottom: 1px solid #707070;
+}
+
+.ess_duo li {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.financer {
+  text-align: center;
+}
+
+.financer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.financer div img {
+  height: 3rem;
+  width: auto;
+  margin: 0 0.5rem;
 }

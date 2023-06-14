@@ -6,6 +6,10 @@ import sorties from "../assets/sorties.jpg";
 import alpha from "../assets/alpha.jpg";
 import alimentaire from "../assets/alimentaire.jpg";
 import ateliers from "../assets/parentalite.jpg";
+import signature from "../assets/signature.jpg";
+import jardinier from "../assets/jardinier.jpg";
+import potager from "../assets/potager.jpg";
+import ballade from "../assets/ballade.jpg";
 
 const duoData = [
   [
@@ -44,7 +48,7 @@ const duoData = [
       alt: "Activités culturelles",
       title: "Activités culturelles",
       text: [
-        "Des ateliers culturels sont proposés aux enfants et aux jeunes afin de contribuer au développement de leurs compétences en termes de lecture et d’écriture, mais aussi d’expression orale, d’autonomie et de méthodologie.",
+        "Des signature culturels sont psignature enfants et aux jeunes afin de contribuer au développement de leurs compétences en termes de lecture et d’écriture, mais aussi d’expression orale, d’autonomie et de méthodologie.",
       ],
     },
     {
@@ -96,6 +100,47 @@ const duoData = [
       text: [
         "Les équipes d’Educanoo se tiennent au service des habitants pour assurer des médiations parentales et familiales afin de les aider à retisser des liens parfois fragiles. Des ateliers parentalité sont également organisés.",
         "L’équipe d’Educanoo intervient directement auprès des parents afin de les accompagner dans l’élaboration de leur parentalité, de développer la confiance en soi et de favoriser le lien d’attachement parents/enfants.",
+      ],
+    },
+  ],
+  [
+    {
+      id: 0,
+      src: signature,
+      alt: "personne qui signe un document",
+      text: [
+        "Les personnes souhaitant être accompagnées sur le plan professionnel sont accueillies en individuel lors des permanences sociales. Elles bénéficient alors d’une écoute, d’une aide et de conseils en fonction de leur besoin. Elles peuvent notamment être accompagnées dans l’élaboration de leur CV jusqu’à son impression pour diffusion à des recruteurs identifiés.",
+        "Lorsque des besoins similaires sont identifiés, des groupes peuvent être formés afin de faire bénéficier les participants des atouts du collectif (remobilisation collective, échanges d’expériences…).",
+      ],
+    },
+  ],
+  [
+    {
+      id: 0,
+      src: ballade,
+      alt: "groupe de personnes qui se balladent dans la forêt",
+      text: [
+        "Educanoo porte depuis octobre 2019 le chantier d’insertion Bougeanoo, conventionné avec le Département, qui permet l’accompagnement de 8 salariés en insertion et la mise en œuvre d’activités éducatives et sociales au sein des quartiers. Les salariés en insertion ont l’occasion d’acquérir de nouvelles compétences et de suivre des formations pour améliorer leurs pratiques professionnelles et compléter leurs connaissances dans un métier de l’animation sociale, sportive ou en lien avec le développement durable.",
+      ],
+    },
+  ],
+  [
+    {
+      id: 0,
+      src: potager,
+      alt: "potager avec quelques les légumes",
+      text: [
+        "L’ACI lancé en décembre 2021 a pour objectif de contribuer à l’insertion de douze personnes détenues en leur proposant une activité rémunérée autour de la production de fruits et de légumes, une formation et un accompagnement socio-professionnel. ",
+        "La production maraîchère vise d’une part à approvisionner les colis alimentaires distribués par Educanoo, et d’autre part à approvisionner le mess du centre de détention ainsi qu’à proposer des paniers au personnel du centre de détention.",
+      ],
+    },
+    {
+      id: 0,
+      src: jardinier,
+      alt: "jardinier en plein milieu d'un potager",
+      text: [
+        "Le soutien du plan de relance a permis d’aménager les parcelles avec des locaux techniques et une pépinière sous ombrière pour la multiplication des cultures, ainsi que d’acquérir du matériel horticole.",
+        "Le soutien du FDI 2021 a pour objectif de passer une partie de la production en hydroponie dès mi-2022. Educanoo a choisi de se faire accompagner par Aquaponie Réunion pour contrôler le système hydroponique et former l’encadrant technique.",
       ],
     },
   ],
