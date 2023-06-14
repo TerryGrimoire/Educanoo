@@ -96,7 +96,7 @@ section {
 
 .button_style {
   border: none;
-  padding: 0.5rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 2rem;
   font-weight: bold;
   background-color: var(--third-color);
@@ -189,11 +189,6 @@ section {
 
 .nav_middle > * {
   padding: 0 1rem;
-}
-
-.button_white_blue {
-  background-color: var(--main-bg-color);
-  color: var(--third-color);
 }
 
 /********************************************************************* HOME *********************************************************************/ 
