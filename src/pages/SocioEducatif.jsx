@@ -20,6 +20,7 @@ function SocioEducatif({ helmet }) {
         <Title id={0} />
         <Duo id={1} />
         <Title id={1} />
+        <Duo id={2} />
       </main>
     </div>
   );
