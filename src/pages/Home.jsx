@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import Image from "../components/Home/LandingPage/Image";
+import video from "../assets/video.mp4";
 
 export default function Home({ helmet }) {
   useEffect(() => {
@@ -13,7 +13,14 @@ export default function Home({ helmet }) {
         <link rel="canonical" href={helmet.href} />
         <meta name="description" content={helmet.description} />
       </Helmet>
-      <Image title={helmet.title} />
+      <div className="video">
+        <video autoPlay loop muted>
+          <track kind="captions" />
+          <source src={video} type="video/mp4" />
+        </video>
+        <h1 className="h1">Partenaire du développement solidaire à La Réunion</h1>
+        <div className="veil" />
+      </div>
       <section className="section2">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus

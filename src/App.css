@@ -165,10 +165,14 @@ section {
 }
 
 .nav_white, .nav_white * {
-  background-color: var(--third-color);
+  background-color: transparent;
   color: var(--main-bg-color);
 }
-
+.nav_white {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
 .nav_middle {
   display:flex;
   justify-content: center;
@@ -182,4 +186,42 @@ section {
 .button_white_blue {
   background-color: var(--main-bg-color);
   color: var(--third-color);
+}
+
+/********************************************************************* HOME *********************************************************************/ 
+/****************** VIDEO ***********************/
+.video {
+  position: relative;
+  overflow: hidden;
+}
+.video video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+
+}
+
+.video .veil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-bg-color);
+  opacity: 40%;
+}
+
+.video .h1 {
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--main-bg-color);
+  background-color: transparent;
+  font-size: 4rem;
+  width: 60%;
 }
