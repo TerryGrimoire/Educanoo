@@ -16,6 +16,7 @@ import mediatheque from "../assets/mediatheque.png";
 import restoSocial from "../assets/restoSocial.jpg";
 import detenus from "../assets/detenus.jpg";
 import legumes from "../assets/legumes.jpg";
+import couturiere from "../assets/couturiere.jpg";
 
 const duoData = [
   [
@@ -210,6 +211,17 @@ const duoData = [
       alt: "Plusieurs fruits et légumes dans un bac en bois",
       text: [
         "Depuis l’ouverture du Mess, l’ACI Colibrinoo, fournit régulièrement des salades et différents légumes au Mess. Ces légumes sont transformés par les détenus et servis sur le bar salade.",
+      ],
+    },
+  ],
+  [
+    {
+      id: 0,
+      src: couturiere,
+      alt: "Dame souriante qui fait de la couture",
+      text: [
+        "Educanoo porte depuis septembre 2020 l’Atelier Chantier d’Insertion Filanoo, conventionné par le CDIAE, qui permet l’accompagnement de 10 salariés en insertion et le développement d’une offre textile durable et responsable.",
+        "L’ACI développe en parallèle un modèle de confection innovante d’accessoires personnalisés autour d’une collection zéro déchets : cabas, sacs de course réutilisables, lingettes lavables, essuie-tout, charlottes alimentaires…",
       ],
     },
   ],

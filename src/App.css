@@ -647,7 +647,9 @@ section {
   padding-left: 2rem;
   padding-right: 0;
 }
-
+.duo:nth-of-type(2n) article {
+  padding: 0;
+}
 .duo > * {
   width: 50%;
 }
@@ -814,11 +816,16 @@ span {
   width: 50% !important;
   margin: 0 !important;
 }
-.restoMess .h2 {
+ .h2 {
   text-align: center;
   color: var(--third-color);
   font-size: 3rem;
 }
+
+/********************************************************************* FILANOO *********************************************************************/ 
+
+
+
 /********************************************************************* CONTACT *********************************************************************/ 
 
 .contact_duo {
