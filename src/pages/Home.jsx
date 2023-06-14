@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
+import ACI from "../components/ACI";
+
 import interventionData from "../data/interventionData";
 
 import video from "../assets/video.mp4";
@@ -104,6 +106,41 @@ export default function Home({ helmet }) {
             En savoir plus
           </button>
         </Link>
+      </section>
+      <section className="ess">
+        <h2>L'économie sociale et solidaire</h2>
+        <Link to="/Ess">
+          <button type="button" className="button_style">
+            Voir toutes nos actions ESS
+          </button>
+        </Link>
+        <ACI />
+      </section>
+      <section className="objectifs">
+        <div className="objectifs_top" />
+        <p className="objectifs_top_text">
+          En 2022, Educanoo entame sa transition numérique avec un grand projet
+          « d’Optimisation des parcours des bénéficiaires par le développement
+          d’une plateforme numérique de gestion et de services »
+        </p>
+
+        <article>
+          <p>La finalité est : </p>
+          <ul>
+            <li>
+              • Améliorer le fonctionnement des actions de l’association ;
+            </li>
+            <li>
+              • Améliorer les services rendus aux personnes en situation de
+              précarité ;
+            </li>
+            <li>
+              • Favoriser l’évaluation des besoins des familles en difficulté ;
+            </li>
+            <li> • Améliorer les outils fournis aux bénéficiaires.</li>
+          </ul>
+        </article>
+        <div className="objectifs_bottom" />
       </section>
     </main>
   );

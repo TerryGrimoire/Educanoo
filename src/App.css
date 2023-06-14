@@ -11,6 +11,7 @@
   --box-shadow: #e1e1e1 0px 1px 0px, #e1e1e1 0px 4px 16px, #e1e1e1 0px 8px 16px;
   --font-title : 'Mukta', sans-serif;
   --font-text :'Josefin Sans', sans-serif;
+  --max-width: 1200px;
 }
 
 
@@ -98,6 +99,8 @@ section {
   padding: 0.5rem 1.25rem;
   border-radius: 2rem;
   font-weight: bold;
+  background-color: var(--third-color);
+  color: var(--main-bg-color);
 }
 
 .margin1r0 {
@@ -364,17 +367,100 @@ section {
 
 
 
+/****************** ESS  ***********************/
+.ess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aci {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.aci .aci_div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 80vw;
+  max-width:var(--max-width);
+  background-color: var(--fourth-color);
+  color: var(--main-bg-color);
+}
 
+.aci_div > * {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.aci_div.blue {
+  background-color: var(--third-color);
+  color: var(--main-bg-color);
+}
 
+.aci_div * {
+  background-color: inherit;
+  color: inherit;
+}
 
+.aci_div article * {
+  margin-bottom: 1rem;
+}
 
-
-
+.aci_div article p {
+  width: 80%;
+  text-align: center;
+}
 
 
 .button_white_blue {
-  background-color: var(--main-bg-color);
-  color: var(--third-color);
+  background-color: var(--main-bg-color) !important;
+  color: var(--third-color) !important;
+}
+
+/****************** OBJECTIFS  ***********************/
+
+.objectifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 10vw;
+  position: relative;
+}
+.objectifs_top_text {
+  font-weight: bold;
+}
+.objectifs * {
+  margin: 0.5rem 0;
+}
+.objectifs ul {
+  margin-top: 1rem;
+}
+.objectifs li {
+  margin: 0;
+}
+
+.objectifs_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, #9EC41E,#008BD2  );
+}
+
+.objectifs_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(270deg, #9EC41E,#008BD2  );
 }
