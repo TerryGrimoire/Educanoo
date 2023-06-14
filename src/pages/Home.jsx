@@ -13,16 +13,6 @@ export default function Home({ helmet }) {
         <link rel="canonical" href={helmet.href} />
         <meta name="description" content={helmet.description} />
       </Helmet>
-
-      {/*
-
-        Options here :
-        -  Main image Style - Landing page like Charles Portefolio (main image + title in the middle) 
-        -  Main video Style - Landing page like Barber 902 (main vidéo + title in the middle)
-        -  Animation  Style - Landing page like ASMK (main image animated + title in the middle)
- 
-        */}
-
       <Image title={helmet.title} />
       <section className="section2">
         <p>
