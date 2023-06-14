@@ -5,6 +5,8 @@
   --main-bg-color : #FFFFFF;
   --secondary-bg-color : #191919;
   --third-color : #008BD2;
+  --fourth-color: #9EC41E ;
+  --light-text-color : #717171;
   --button-color: #0055FF;
   --box-shadow: #e1e1e1 0px 1px 0px, #e1e1e1 0px 4px 16px, #e1e1e1 0px 8px 16px;
   --font-title : 'Mukta', sans-serif;
@@ -192,7 +194,6 @@ section {
 /****************** VIDEO ***********************/
 .video {
   position: relative;
-  overflow: hidden;
 }
 .video video {
   width: 100%;
@@ -224,4 +225,106 @@ section {
   background-color: transparent;
   font-size: 4rem;
   width: 60%;
+}
+
+/****************** NOTRE MISSION ***********************/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: visible;
+  padding: 0;
+}
+/**** bloc left*******/
+
+.mission_bloc_left {
+  transform: translateY(-8rem);
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.mission_bloc_left p {
+  width: 80%;
+  text-align: center;
+}
+
+.mission_bloc_left .mission_main_img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission_bloc_left .mission_main_text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/**** bloc right*******/
+.mission_bloc_right {
+  width: 25%;
+  height: calc(70vh - 8rem);
+  background-color: var(--fourth-color);
+  color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.mission_bloc_right > * {
+  background-color: inherit;
+  margin: 0.5rem 0;
+}
+
+.mission_bloc_right p {
+  width: 80%;
+  text-align: center;
+}
+
+/****************** INTERVENTIONS  ***********************/
+
+.interventions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.interventions_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intervention {
+  width: 20%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.intervention p {
+  color: #717171;
+}
+
+.intervention > * {
+  margin-bottom: 1rem;
+}
+
+.intervention button {
+  border: none;
+  color: var(--third-color);
+  font-weight: bold;
 }
