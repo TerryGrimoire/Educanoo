@@ -807,3 +807,48 @@ span {
   width: auto;
   margin: 0 0.5rem;
 }
+
+/********************************************************************* CONTACT *********************************************************************/ 
+
+.contact_duo {
+  max-width: var(--max-width);
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_duo > * {
+  width: 50%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact_duo > div.contact_duo_text {
+  background: linear-gradient(132deg, #9EC41E,  #008BD2) ;
+  padding: 2rem;
+}
+
+.contact_duo * {
+  background-color: transparent;
+  color: var(--main-bg-color);
+}
+
+.contact_duo > div.contact_duo_text > * {
+  margin: 1rem 0;
+}
+.contact_duo > div > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact_duo img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+}
