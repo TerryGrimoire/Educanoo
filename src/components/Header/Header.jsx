@@ -2,20 +2,21 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Nav from "../Navigation/Nav";
 import Navbar from "../Navigation/Navbar";
-import burger from "../../assets/menu.png";
+import burger from "../../assets/menu2.png";
 
 import facebook from "../../assets/facebook.svg";
 import youtube from "../../assets/youtube.svg";
 import instagram from "../../assets/instagram.svg";
 import couvert from "../../assets/couverts.svg";
 import sac from "../../assets/sac.svg";
+import logo from "../../assets/logo_white.png";
 
 function Burger() {
   const [openBurger, setOpenBurger] = useState(false);
 
   return (
     <header className="header">
-      <div className="header_top">
+      <div className="header_top desktop">
         <div className="header_top_left">
           <p>Le reséau EDUCANOO :</p>
           <Link to="/LeMess">
@@ -55,6 +56,14 @@ function Burger() {
         </div>
       </div>
       <Navbar />
+      <div className="mobile header_mobile">
+        <button type="button" onClick={() => setOpenBurger(!openBurger)}>
+          <img src={burger} alt="trois traits pour cliquer sur le burger" />
+        </button>
+        <Link to="/">
+          <img src={logo} alt="logo Educanoo" />
+        </Link>
+      </div>
       {openBurger && <Nav setOpenBurger={setOpenBurger} />}
     </header>
   );

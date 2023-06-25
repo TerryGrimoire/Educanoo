@@ -11,7 +11,7 @@ function Navbar() {
   const logo = loc === "/" ? logoWhite : logoNormal;
 
   return (
-    <nav className={loc === "/" ? "navbar nav_white" : "navbar"}>
+    <nav className={loc === "/" ? "navbar nav_white desktop" : "navbar desktop"}>
       <Link to="/">
         <img src={logo} alt="Logo Educanoo" className="logo" />
       </Link>

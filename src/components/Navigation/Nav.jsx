@@ -4,27 +4,42 @@ import croix from "../../assets/fermer.png";
 
 function Nav({ setOpenBurger }) {
   return (
-    <nav className="flex-col openBurger justify-between">
+    <nav className="openBurger">
       <button
         type="button"
-        onClick={() => setOpenBurger(false)}
         className="croix"
+        onClick={() => setOpenBurger(false)}
       >
-        <img src={croix} alt="croix pour fermer la navigation sur la page" />
+        <img src={croix} alt="croix" />
       </button>
-      <Link to="/">
+      <Link to="/Apropos">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Accueil
+          À propos
         </button>
       </Link>
-      <Link to="/Services">
+      <Link to="/SocioEducatif">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Services
+          Socio-éducatif
         </button>
       </Link>
-      <Link to="/Tarifs">
+      <Link to="/ESS">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Tarifs
+          ESS
+        </button>
+      </Link>
+      <Link to="/SolidariteOI">
+        <button type="button" onClick={() => setOpenBurger(false)}>
+          Solidarité Océan Indien
+        </button>
+      </Link>
+      <Link to="/Filanoo">
+        <button type="button" onClick={() => setOpenBurger(false)}>
+          Filanoo
+        </button>
+      </Link>
+      <Link to="/LeMess">
+        <button type="button" onClick={() => setOpenBurger(false)}>
+          Le Mess
         </button>
       </Link>
       <Link to="/Contact">
