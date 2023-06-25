@@ -9,10 +9,18 @@ function Banniere({ id }) {
   return (
     <>
       <section className={banniereData[id].src}>
-        <h1>{banniereData[id].title}</h1> <div className="veil" />
+        {banniereData[id].title && <h1>{banniereData[id].title}</h1>}
+        <div className="veil" />
+        {banniereData[id].logo && (
+          <img
+            src={banniereData[id].logo}
+            alt={`logo de ${banniereData[id].title}`}
+            className={banniereData[id].logoClass}
+          />
+        )}
         {banniereData[id].subtitle && <h2>{banniereData[id].subtitle}</h2>}
         {banniereData[id].button && (
-          <Link to={banniereData[id].buttonLink}>
+          <HashLink smooth to={banniereData[id].buttonLink}>
             <button type="button" className="button_style button_white_blue">
               <img
                 src={couvert}
@@ -20,7 +28,7 @@ function Banniere({ id }) {
               />
               {banniereData[id].button}
             </button>
-          </Link>
+          </HashLink>
         )}
       </section>
       <div className="barreNav">

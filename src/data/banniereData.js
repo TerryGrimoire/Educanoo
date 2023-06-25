@@ -1,6 +1,8 @@
 import reseau from "../assets/connected.svg";
 import livre from "../assets/socio.svg";
 import ess from "../assets/essWhite.svg";
+import logoMess from "../assets/logoMess.png";
+import logoFilanoo from "../assets/logoFilanoo.png";
 
 const banniereData = [
   {
@@ -84,17 +86,19 @@ const banniereData = [
   },
   {
     id: 5,
-    title: "Le Mess",
     subtitle: "La réinsertion par les métiers de la restauration",
     src: "banniere table",
     button: "Voir le Menu",
-    buttonLink: "#menu",
+    logo: logoMess,
+    logoClass: "logoACI messLogo",
+    buttonLink: "/LeMess#menu",
   },
   {
     id: 6,
-    title: "Filanoo",
     subtitle: "Atelier textile Zéro Déchet",
     src: "banniere couture",
+    logo: logoFilanoo,
+    logoClass: "logoACI",
   },
 ];
 

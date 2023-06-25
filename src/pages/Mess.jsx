@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import papa from "papaparse";
 
 import Banniere from "../components/Banniere";
 import Duo from "../components/Duo";
@@ -10,11 +11,50 @@ import map from "../assets/map.png";
 import tel from "../assets/tel.png";
 import email from "../assets/email.png";
 import resto from "../assets/resto.jpg";
+import separateur from "../assets/separateur.svg";
 
 function Mess({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [menu, setMenu] = useState([]);
+
+  const prepareData = (data) => {
+    // j correspond aux lignes de A à ZZZ sur fichier Excel
+    // index
+    // line correspond à
+    // index correspond à
+    // key correspond à
+
+    const jour = [];
+    let date = "";
+
+    const json = data.map((line, index) => {
+      if (index > 0) {
+        data[0].forEach((key, j) => {
+          if (key.includes("di")) {
+            jour.push({ day: key, menu: line[j] });
+          } else {
+            date = line[j];
+          }
+        });
+      }
+      return { date, jour };
+    });
+
+    json.shift();
+    sessionStorage.setItem("actu", JSON.stringify([...new Set(json)]));
+    setMenu([...new Set(json)]);
+  };
+
+  useEffect(() => {
+    fetch(import.meta.env.VITE_MESS)
+      .then((result) => result.text())
+      .then((text) => papa.parse(text))
+      .then((data) => prepareData(data.data));
+  }, []);
+
   return (
     <div>
       <Helmet>
@@ -64,6 +104,37 @@ function Mess({ helmet }) {
             </div>
           </div>
         </section>
+        {menu &&
+          menu.length > 0 &&
+          menu.map((el) => (
+            <section className="menuDuJour" id="menu">
+              <h3>{el.date}</h3>
+              <p className="bold">
+                {el.date && "Réservation à effectuer la veille par téléphone"}
+              </p>
+              <div className="menu_container">
+                {el.jour.map((day) => (
+                  <div className="menu">
+                    <h4>{day.day}</h4>
+                    <ol>
+                      {day.menu.split(";").map((plat, index) => (
+                        <li>
+                          {plat}{" "}
+                          {index < day.menu.split(";").length - 1 && (
+                            <img
+                              src={separateur}
+                              alt="petite décoration pour séparer le menu"
+                              className="separateur"
+                            />
+                          )}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
         <section>
           <h2 className="h2">Les objectifs du Mess</h2>
           <Duo id={8} />
