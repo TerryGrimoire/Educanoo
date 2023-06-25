@@ -1,11 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import banniereData from "../data/banniereData";
 import couvert from "../assets/couverts.png";
 
 function Banniere({ id }) {
+  const location = useLocation();
+  const loc = location.pathname;
+
   return (
     <>
       <section className={banniereData[id].src}>
@@ -31,11 +34,13 @@ function Banniere({ id }) {
           </HashLink>
         )}
       </section>
-      <div className="barreNav">
-        <Link to="/">Accueil</Link>
-        <p>{`>`}</p>
-        <p>{banniereData[id].title}</p>
-      </div>
+      {loc === "/LeMess" || loc === "/Filanoo" ? null : (
+        <div className="barreNav">
+          <Link to="/">Accueil</Link>
+          <p>{`>`}</p>
+          <p>{banniereData[id].title}</p>
+        </div>
+      )}
       {banniereData[id].sommaire && (
         <nav className="sommaire">
           <div className="sommaire_left">

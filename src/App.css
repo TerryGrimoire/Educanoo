@@ -94,6 +94,10 @@ section {
   position: relative;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .button_style {
   border: none;
   padding: 0.75rem 1.25rem;
@@ -155,6 +159,11 @@ section {
 .header_top_right a {
   padding: 0 0.5rem;
 } 
+
+ .header_top_right img{
+  width: 2rem;
+ }
+
 .header_top_left img {
   margin: 0 0.5rem;
 }
@@ -823,7 +832,9 @@ span {
 }
 
 /********************************************************************* MESS *********************************************************************/ 
-
+.restoMess .contact_duo {
+  margin-top: 3rem;
+}
 .restoImg {
   width: 50% !important;
   margin: 0 !important;
@@ -896,7 +907,17 @@ padding: 0 2rem 4rem;
   font-weight: bold;
 }
 /********************************************************************* FILANOO *********************************************************************/ 
+.filanoo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 
+.charging {
+  text-align: center;
+  margin: 2rem 0;
+}
 .items_main_container {
   display: flex;
   flex-direction: column;
@@ -918,7 +939,8 @@ padding: 0 2rem 4rem;
   justify-content: center;
   align-content: center;
   width: 31%;
-  margin: 2rem 1%;
+  min-width: 250px;
+  margin: 1%;
   text-align: center;
 }
 
@@ -931,6 +953,71 @@ padding: 0 2rem 4rem;
   object-fit: cover;
   object-position: center;
   margin-bottom: 1rem;
+}
+
+.stock {
+  color: var(--third-color);
+  font-weight: bold;
+}
+
+.enStock {
+  color: var(--fourth-color);
+}
+
+/**  DEFILANT **/
+
+.messagedefilant {
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background:linear-gradient(92deg, #9EC41E, #008BD2 );
+}
+
+.messagedefilant, .messagedefilant * {
+  background-color: transparent;
+  color: var(--main-bg-color);
+  font-size: 1rem; 
+  font-weight: bold;
+}
+ 
+.messagedefilant div {
+  position: absolute;
+  top:1rem;
+  min-width: 100%; /* au minimum la largeur du conteneur */
+}
+ 
+.messagedefilant div span, 
+.messagedefilant div:after {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  top:0;
+  margin: 0 5rem;
+}
+ 
+.messagedefilant div span {
+  animation: defilement 30s infinite linear;
+}
+ 
+.messagedefilant div:after {
+  position: absolute;
+  top:0; left:0;
+  content:attr(data-text);
+  animation: defilement2 30s infinite linear;
+}
+ 
+@keyframes defilement {
+  0% { margin-left: 0; }
+  100% { margin-left: -100%; }
+}
+ 
+@keyframes defilement2 {
+  0% { margin-left: 100%; }
+  100% { margin-left: 0%; }
 }
 /********************************************************************* CONTACT *********************************************************************/ 
 
@@ -976,4 +1063,79 @@ padding: 0 2rem 4rem;
   height: 1rem;
   margin-right: 1rem;
 }
+/********************************************************************* FOOTER *********************************************************************/ 
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer_top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: var(--max-width);
+}
+
+footer .footer_top_left {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+footer .footer_top_left img {
+  width: 8rem;
+  margin: 0 auto;
+}
+.footer_top_left .reseaux_sociaux {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.footer_top_left .reseaux_sociaux img{
+  width: 2rem;
+  margin: 1rem 0.2rem;
+}
+
+.footer .footer_top_right {
+  width: 70%;
+}
+
+.footer_top_right a {
+  color: var(--third-color);
+  margin-right: 4rem;
+  font-weight: bold;
+}
+
+.footer_top_right .oblig {
+  margin-top: 2rem;
+}
+
+.footer_top_right .oblig img {
+  height: 4rem;
+  width: auto;
+  margin: 1rem 0.5rem;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-top: lightgray 1px solid;
+  padding: 3rem;
+}
+
+.footer_bottom h3 {
+  font-size: 2rem;
+}
+
+.footer_bottom img {
+  width: 70%;
+  margin: 2rem auto;
+}

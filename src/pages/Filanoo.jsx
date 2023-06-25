@@ -4,6 +4,7 @@ import papa from "papaparse";
 
 import Banniere from "../components/Banniere";
 import Duo from "../components/Duo";
+import Defilant from "../components/Defilant";
 
 function Filanoo({ helmet }) {
   useEffect(() => {
@@ -40,7 +41,7 @@ function Filanoo({ helmet }) {
   }, []);
 
   return (
-    <div>
+    <div className="filanoo">
       <Helmet>
         <title> {helmet.title} | Filanoo </title>
         <link rel="canonical" href={`${helmet.href}/Filanoo`} />
@@ -48,6 +49,7 @@ function Filanoo({ helmet }) {
       </Helmet>
       <main>
         <Banniere id={6} />
+        {items.length > 0 && <Defilant message={items[0].message} />}
         {items.length > 0 ? (
           <section className="items_main_container">
             <h3>Un produit vous intéresse ?</h3>
@@ -63,13 +65,19 @@ function Filanoo({ helmet }) {
                     <img src={el.image} alt={el.nom} />
                     <h4>{el.nom}</h4>
                     <p>{el.prix}</p>
-                    <p className="stock">{el.stock}</p>
+                    <p
+                      className={
+                        el.stock === "En stock" ? "stock enStock" : "stock"
+                      }
+                    >
+                      {el.stock}
+                    </p>
                   </div>
                 ))}
             </div>
           </section>
         ) : (
-          <p>chargement des produits</p>
+          <p className="charging">chargement des produits</p>
         )}
         <section>
           <h2 className="h2">Qu'est-ce que Filanoo ?</h2>

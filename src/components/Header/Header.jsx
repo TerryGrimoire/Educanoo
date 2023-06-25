@@ -6,6 +6,7 @@ import burger from "../../assets/menu.png";
 
 import facebook from "../../assets/facebook.svg";
 import youtube from "../../assets/youtube.svg";
+import instagram from "../../assets/instagram.svg";
 import couvert from "../../assets/couverts.svg";
 import sac from "../../assets/sac.svg";
 
@@ -36,6 +37,13 @@ function Burger() {
             rel="noreferrer"
           >
             <img src={facebook} alt="Logo Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com/educanooreunion/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={instagram} alt="Logo Instagram" />
           </a>
           <a
             href="https://www.youtube.com/@educanooreunion1510"
