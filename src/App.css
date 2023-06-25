@@ -1138,4 +1138,5 @@ footer .footer_top_left img {
 .footer_bottom img {
   width: 70%;
   margin: 2rem auto;
+  max-width: var(--max-width);
 }
