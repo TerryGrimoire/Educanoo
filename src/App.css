@@ -602,8 +602,9 @@ font-size: normal;
 }
 
 .couture {
-  background-image: url(./assets/couture.jpg);
+  background-image: url(./assets/atelierCouture.jpeg);
   background-position: 50%;
+  background-size: cover;
 }
 
 /****************** BARRENAV  ***********************/
@@ -1653,8 +1654,7 @@ flex-direction: column-reverse;
 }
 
 .couture {
-  background-image: url(./assets/couture.jpg);
-  background-position: 50%;
+  background-image: url(./assets/atelierCouture.jpeg);
 }
 
 /****************** BARRENAV  ***********************/

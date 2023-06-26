@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import repas from "../assets/repas.jpg";
-import filanoo from "../assets/filanoo.jpg";
+import filanoo from "../assets/filanooACI2.jpeg";
 
 function ACI() {
   return (

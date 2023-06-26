@@ -16,7 +16,8 @@ import mediatheque from "../assets/mediatheque.png";
 import restoSocial from "../assets/restoSocial.jpg";
 import detenus from "../assets/detenus.jpg";
 import legumes from "../assets/legumes.jpg";
-import couturiere from "../assets/couturiere.jpg";
+import couturiere from "../assets/couture.jpeg";
+import atelierCouture from "../assets/filanooBanniere.jpeg";
 
 const duoData = [
   [
@@ -222,6 +223,15 @@ const duoData = [
       text: [
         "Educanoo porte depuis septembre 2020 l’Atelier Chantier d’Insertion Filanoo, conventionné par le CDIAE, qui permet l’accompagnement de 10 salariés en insertion et le développement d’une offre textile durable et responsable.",
         "L’ACI développe en parallèle un modèle de confection innovante d’accessoires personnalisés autour d’une collection zéro déchets : cabas, sacs de course réutilisables, lingettes lavables, essuie-tout, charlottes alimentaires…",
+      ],
+    },
+    {
+      id: 0,
+      src: atelierCouture,
+      alt: "Dame souriante qui fait de la couture",
+      title: "Ateliers couture",
+      text: [
+        "Vous souhaitez apprendre les bases de la couture et repartir avec une trousse de toilette: les ateliers couture de Filanoo sont faits pour vous. En individuel ou en collectif, contacter nous pour les tarifs !",
       ],
     },
   ],
