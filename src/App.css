@@ -1326,6 +1326,14 @@ width: 100%;
   width: 70vw;
   border-top: lightgray 1px solid;
 }
+
+.openBurger button .sac_nav {
+  height: 1rem;
+}
+
+.openBurger button .fourche_nav {
+  height: 1.5rem;
+}
 .openBurger .croix {
   position: absolute;
   top: 0;
