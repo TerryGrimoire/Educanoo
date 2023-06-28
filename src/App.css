@@ -1274,8 +1274,8 @@ footer .footer_top_left img {
   text-align: center;
   color: var(--main-bg-color);
   background-color: transparent;
-  font-size: 3rem;
-  width: 70%;
+  font-size: 2.5rem;
+  width: 100%;
   overflow:visible;
 }
 
