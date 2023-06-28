@@ -61,7 +61,7 @@ function Apropos({ helmet }) {
                 <span>
                   Développer la cohésion, le lien social et un meilleur vivre
                   ensemble
-                </span>
+                </span>{" "}
                 entre les jeunes, leur famille, leur voisinage, leur quartier,
                 leur ville, et leurs établissements scolaires.
               </li>
@@ -70,12 +70,12 @@ function Apropos({ helmet }) {
                 proposant des activités visant à les sortir de leur quotidien.
               </li>
               <li>
-                • <span>Lutter contre l’échec et le décrochage scolaire</span>
+                • <span>Lutter contre l’échec et le décrochage scolaire</span>{" "}
                 par des cours de soutien scolaire et des activités périscolaires
                 ludiques, culturelles et sportives.
               </li>
               <li>
-                • <span>Venir en aide aux personnes en difficulté isolées</span>
+                • <span>Venir en aide aux personnes en difficulté isolées</span>{" "}
                 (notamment les familles monoparentales, les personnes âgées et
                 les personnes en situation de handicap) en leur proposant une
                 aide alimentaire
@@ -88,7 +88,7 @@ function Apropos({ helmet }) {
                   {" "}
                   Aider les personnes en difficulté dans leur insertion sociale
                   et professionnelle
-                </span>
+                </span>{" "}
                 en les accompagnant dans leurs démarches administratives et de
                 recherche d’emploi.
               </li>
@@ -98,7 +98,7 @@ function Apropos({ helmet }) {
                   {" "}
                   Soutenir ou porter la création d’activités économiques qui
                   concilient utilité sociale et solidarités
-                </span>
+                </span>{" "}
                 pour créer des emplois.
               </li>
               <li>
