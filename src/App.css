@@ -27,7 +27,10 @@
   font-family: var(--font-text);
   overflow-x: hidden;
 }
-
+.shad {
+  box-shadow: var(--box-shadow);
+  margin: 1rem ;
+}
 h1, h2, h3 {
   font-family: var(--font-title);
   padding: 1rem 0;
