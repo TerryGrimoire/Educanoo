@@ -51,7 +51,7 @@ function Contact({ helmet }) {
               <img src={email} alt="icone e-mail" />
               <div>
                 <h3>E-mail</h3>
-                <p>accueil.educanoo974@gmail.com</p>
+                <p>contact@educanoo.fr</p>
               </div>
             </div>
           </div>
