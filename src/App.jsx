@@ -19,7 +19,7 @@ import "./App.css";
 function App() {
   const helmet = {
     title: "Educanoo",
-    href: "https://educanoo.re",
+    href: "https://educanoo.fr",
     description:
       "Educanoo est une association loi 1901 qui agit depuis 2010 dans le domaine du développement solidaire. L’association développe ses activités sur l’ensemble du territoire de la Réunion depuis 2019 au cœur des quartiers prioritaires.",
   };
